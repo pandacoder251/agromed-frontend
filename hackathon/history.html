@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History - Agro Med</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+   <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#2F855A] text-white flex flex-col">
+      <div class="p-6 flex items-center space-x-3">
+        <img src="assets/logo.jpg" alt="Agro Med" class="w-12 h-12 rounded-full">
+        <span class="text-xl font-bold">Agro Med</span>
+      </div>
+      <nav class="flex-1 px-4 space-y-2">
+        <a href="dashboard.html" class="block py-2 px-3 rounded hover:bg-green-700 bg-green-700">Dashboard</a>
+        <a href="test.html" class="block py-2 px-3 rounded hover:bg-green-700">Test</a>
+        <a href="history.html" class="block py-2 px-3 rounded hover:bg-green-700">History</a>
+        <a href="news.html" class="block py-2 px-3 rounded hover:bg-green-700">News</a>
+        <a href="account.html" class="block py-2 px-3 rounded hover:bg-green-700">Account</a>
+        <a href="feedback.html" class="block py-2 px-3 rounded hover:bg-green-700">Feedback</a>
+        <a href="signin.html" class="block py-2 px-3 rounded hover:bg-green-700">Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <section class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">History of Detected Diseases</h2>
+        <p class="text-gray-700 mb-4">Review your past crop disease tests and suggested treatments.</p>
+
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-[#2F855A] text-white">
+              <tr>
+                <th class="py-2 px-4 text-left">Date</th>
+                <th class="py-2 px-4 text-left">Crop</th>
+                <th class="py-2 px-4 text-left">Disease Name</th>
+                <th class="py-2 px-4 text-left">Suggested Treatment</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-b hover:bg-green-50">
+                <td class="py-2 px-4">2025-08-22</td>
+                <td class="py-2 px-4">Tomato</td>
+                <td class="py-2 px-4">Late Blight</td>
+                <td class="py-2 px-4">Apply fungicide; remove affected leaves</td>
+              </tr>
+              <tr class="border-b hover:bg-green-50">
+                <td class="py-2 px-4">2025-08-20</td>
+                <td class="py-2 px-4">Potato</td>
+                <td class="py-2 px-4">Early Blight</td>
+                <td class="py-2 px-4">Use copper-based sprays; rotate crops</td>
+              </tr>
+              <tr class="border-b hover:bg-green-50">
+                <td class="py-2 px-4">2025-08-18</td>
+                <td class="py-2 px-4">Wheat</td>
+                <td class="py-2 px-4">Rust</td>
+                <td class="py-2 px-4">Apply fungicide; maintain proper spacing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

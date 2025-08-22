@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - Agro Med</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#2F855A] text-white flex flex-col">
+      <div class="p-6 flex items-center space-x-3">
+        <img src="assets/logo.jpg" alt="Agro Med" class="w-12 h-12 rounded-full">
+        <span class="text-xl font-bold">Agro Med</span>
+      </div>
+      <nav class="flex-1 px-4 space-y-2">
+        <a href="dashboard.html" class="block py-2 px-3 rounded hover:bg-green-700">Dashboard</a>
+        <a href="test.html" class="block py-2 px-3 rounded hover:bg-green-700">Test</a>
+        <a href="history.html" class="block py-2 px-3 rounded hover:bg-green-700">History</a>
+        <a href="news.html" class="block py-2 px-3 rounded hover:bg-green-700">News</a>
+        <a href="account.html" class="block py-2 px-3 rounded hover:bg-green-700">Account</a>
+        <a href="feedback.html" class="block py-2 px-3 rounded bg-green-700">Feedback</a>
+        <a href="signin.html" class="block py-2 px-3 rounded hover:bg-green-700">Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex justify-center items-center p-6">
+      <form action="#" method="post" class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center text-green-700 mb-6">Feedback Form</h2>
+
+        <!-- Satisfaction -->
+        <label class="font-semibold mb-2 block">How satisfied are you with our service?</label>
+        <div class="space-y-2 mb-6">
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="satisfaction" value="excellent" required class="text-green-600">
+            <span>Excellent</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="satisfaction" value="good" class="text-green-600">
+            <span>Good</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="satisfaction" value="average" class="text-green-600">
+            <span>Average</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="satisfaction" value="poor" class="text-green-600">
+            <span>Poor</span>
+          </label>
+        </div>
+
+        <!-- Comments -->
+        <label for="comments" class="font-semibold mb-2 block">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 mb-6"></textarea>
+
+        <!-- Submit -->
+        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+          Submit Feedback
+        </button>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>
